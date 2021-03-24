@@ -143,10 +143,15 @@ class filter_leeloolxp extends moodle_text_filter {
 
                 $info = new cached_cm_info();
                 $info->name = '';
-                if (!isset($content->text)) {
+                if (!isset($content->text) && !isset($block->content->text)) {
                     $newval = $contentplugin . get_string('block_erroradding', 'filter_leeloolxp');
                 } else {
-                    $newval = '<section class="block_' . $contentplugin . '">' . $content->text . '</section>';
+                    if (isset($content->text)) {
+                        $blockcontent = $content->text;
+                    } else {
+                        $blockcontent = $block->content->text;
+                    }
+                    $newval = '<section class="block_' . $contentplugin . '">' . $blockcontent . '</section>';
                 }
             } else {
                 $newval = $regs[1][$i];
