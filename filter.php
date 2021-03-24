@@ -131,10 +131,14 @@ class filter_leeloolxp extends moodle_text_filter {
                     // This user is not allowed to see this block.
                     if (isset($USER->editing) && $USER->editing) {
                         // Only when editing user can see the message.
-                        return get_string('not_allowed', 'filter_leeloolxp');
+                        $newval = $contentplugin . get_string('not_allowed', 'filter_leeloolxp');
+                        $text = str_replace($regs[0][$i], $newval, $text);
+                        continue;
                     }
                     // Specifically, I do not display any message to avoid confusion among users.
-                    return '';
+                    $newval = $contentplugin . get_string('not_allowed', 'filter_leeloolxp');
+                    $text = str_replace($regs[0][$i], $newval, $text);
+                    continue;
                 }
 
                 $info = new cached_cm_info();
