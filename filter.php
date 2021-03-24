@@ -53,49 +53,49 @@ class filter_leeloolxp extends moodle_text_filter {
             if ($regs[1][$i] == 'LEELOOLXP_AVAILABLE_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_a_courses';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_RECENT_BLOGS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_RECENT_BLOGS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_blog';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_CLIENTS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_CLIENTS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_clients';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_COMPLETED_COURSES') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_COMPLETED_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_c_courses';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_FAQ') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_FAQ') {
                 $needreplace = 1;
                 $contentplugin = 'tb_faq';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_FEATURED_COURSES') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_FEATURED_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_f_courses';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_HEADINGS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_HEADINGS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_headings';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_INPORGRESS_COURSES') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_INPORGRESS_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_in_courses';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_LAST_ENTRY') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_LAST_ENTRY') {
                 $needreplace = 1;
                 $contentplugin = 'tb_latestentry';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_MY_COURSES') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_MY_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_my_courses';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_M_SLOTS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_M_SLOTS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_m_slots';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_SLIDER') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_SLIDER') {
                 $needreplace = 1;
                 $contentplugin = 'tb_slider';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_TEACHERS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_TEACHERS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_teachers';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_TESTIMONIALS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_TESTIMONIALS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_testimonials';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_TOPCATS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_TOPCATS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_top_cats';
-            } elseif ($regs[1][$i] == 'LEELOOLXP_UPCOMING_COURSES') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_UPCOMING_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_up_courses';
             }
