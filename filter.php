@@ -71,7 +71,7 @@ class filter_leeloolxp extends moodle_text_filter {
             } else if ($regs[1][$i] == 'LEELOOLXP_HEADINGS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_headings';
-            } else if ($regs[1][$i] == 'LEELOOLXP_INPORGRESS_COURSES') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_INPROGRESS_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_in_courses';
             } else if ($regs[1][$i] == 'LEELOOLXP_LAST_ENTRY') {
