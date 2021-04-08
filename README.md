@@ -1,5 +1,5 @@
 # Leeloo LXP Content Filter
-=========================
+
 The Leeloo LXP Content Filter allows you to use shortcodes on a page without a { content – region } and display any of the Leeloo LXP Content Plugins from the Suite in the { content – region }.
 
 ## How it Works
@@ -13,19 +13,19 @@ Note: if you use multiple Content Plugins from the Suite, simply rearrange the s
 
 Here are the shortcodes available:- 
 
-[[LEELOOLXP_AVAILABLE_COURSES]]
-[[LEELOOLXP_RECENT_BLOGS]]
-[[LEELOOLXP_CLIENTS]]
-[[LEELOOLXP_COMPLETED_COURSES]]
-[[LEELOOLXP_FAQ]]
-[[LEELOOLXP_FEATURED_COURSES]]
-[[LEELOOLXP_HEADINGS]]
-[[LEELOOLXP_INPROGRESS_COURSES]]
-[[LEELOOLXP_LAST_ENTRY]]
-[[LEELOOLXP_MY_COURSES]]
-[[LEELOOLXP_M_SLOTS]]
-[[LEELOOLXP_SLIDER]]
-[[LEELOOLXP_TEACHERS]]
-[[LEELOOLXP_TESTIMONIALS]]
-[[LEELOOLXP_TOPCATS]]
-[[LEELOOLXP_UPCOMING_COURSES]]
+- [[LEELOOLXP_AVAILABLE_COURSES]]
+- [[LEELOOLXP_RECENT_BLOGS]]
+- [[LEELOOLXP_CLIENTS]]
+- [[LEELOOLXP_COMPLETED_COURSES]]
+- [[LEELOOLXP_FAQ]]
+- [[LEELOOLXP_FEATURED_COURSES]]
+- [[LEELOOLXP_HEADINGS]]
+- [[LEELOOLXP_INPROGRESS_COURSES]]
+- [[LEELOOLXP_LAST_ENTRY]]
+- [[LEELOOLXP_MY_COURSES]]
+- [[LEELOOLXP_M_SLOTS]]
+- [[LEELOOLXP_SLIDER]]
+- [[LEELOOLXP_TEACHERS]]
+- [[LEELOOLXP_TESTIMONIALS]]
+- [[LEELOOLXP_TOPCATS]]
+- [[LEELOOLXP_UPCOMING_COURSES]]
