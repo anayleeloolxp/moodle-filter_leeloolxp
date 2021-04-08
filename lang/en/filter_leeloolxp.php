@@ -24,7 +24,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'Leeloo LXP Content Plugins';
+$string['filtername'] = 'Leeloo LXP Content Filter';
 $string['block_notinstalled'] = ' block is not installed.';
 $string['block_instancenotfound'] = ' block instance is not there.';
 $string['block_erroradding'] = ' error adding the block.';
