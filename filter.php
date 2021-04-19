@@ -68,7 +68,7 @@ class filter_leeloolxp extends moodle_text_filter {
             } else if ($regs[1][$i] == 'LEELOOLXP_FEATURED_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_f_courses';
-            } else if ($regs[1][$i] == 'LEELOOLXP_HEADINGS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_HIGHLIGHTS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_headings';
             } else if ($regs[1][$i] == 'LEELOOLXP_INPROGRESS_COURSES') {
@@ -80,7 +80,7 @@ class filter_leeloolxp extends moodle_text_filter {
             } else if ($regs[1][$i] == 'LEELOOLXP_MY_COURSES') {
                 $needreplace = 1;
                 $contentplugin = 'tb_my_courses';
-            } else if ($regs[1][$i] == 'LEELOOLXP_M_SLOTS') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_BENEFITS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_m_slots';
             } else if ($regs[1][$i] == 'LEELOOLXP_SLIDER') {

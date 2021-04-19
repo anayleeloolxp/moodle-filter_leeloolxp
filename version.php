@@ -24,8 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2021030100;
+$plugin->version = 2021041900;
 $plugin->maturity = MATURITY_BETA;
-$plugin->release = '1.0.0';
+$plugin->release = '1.0.1';
 $plugin->requires = 2013050100;
 $plugin->component = 'filter_leeloolxp';
