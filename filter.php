@@ -41,6 +41,9 @@ class filter_leeloolxp extends moodle_text_filter {
      * @see filter_manager::apply_filter_chain()
      */
     public function filter($text, array $options = array()) {
+        if (strpos($text, '[[LEELOOLXP_') === false) {
+            return $text;
+        }
         global $CFG, $DB, $PAGE, $USER, $SITE;
         require_once($CFG->libdir . '/filelib.php');
         require_once($CFG->dirroot . '/blocks/moodleblock.class.php');
