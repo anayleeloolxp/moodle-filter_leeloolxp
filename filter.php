@@ -53,36 +53,24 @@ class filter_leeloolxp extends moodle_text_filter {
 
         for ($i = 0; $i < count($regs[1]); $i++) {
             $needreplace = 0;
-            if ($regs[1][$i] == 'LEELOOLXP_AVAILABLE_COURSES') {
-                $needreplace = 1;
-                $contentplugin = 'tb_a_courses';
-            } else if ($regs[1][$i] == 'LEELOOLXP_RECENT_BLOGS') {
+            if ($regs[1][$i] == 'LEELOOLXP_RECENT_BLOGS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_blog';
             } else if ($regs[1][$i] == 'LEELOOLXP_CLIENTS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_clients';
-            } else if ($regs[1][$i] == 'LEELOOLXP_COMPLETED_COURSES') {
+            } else if ($regs[1][$i] == 'LEELOOLXP_COURSES') {
                 $needreplace = 1;
-                $contentplugin = 'tb_c_courses';
+                $contentplugin = 'tb_courses';
             } else if ($regs[1][$i] == 'LEELOOLXP_FAQ') {
                 $needreplace = 1;
                 $contentplugin = 'tb_faq';
-            } else if ($regs[1][$i] == 'LEELOOLXP_FEATURED_COURSES') {
-                $needreplace = 1;
-                $contentplugin = 'tb_f_courses';
             } else if ($regs[1][$i] == 'LEELOOLXP_HIGHLIGHTS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_headings';
-            } else if ($regs[1][$i] == 'LEELOOLXP_INPROGRESS_COURSES') {
-                $needreplace = 1;
-                $contentplugin = 'tb_in_courses';
             } else if ($regs[1][$i] == 'LEELOOLXP_LAST_ENTRY') {
                 $needreplace = 1;
                 $contentplugin = 'tb_latestentry';
-            } else if ($regs[1][$i] == 'LEELOOLXP_MY_COURSES') {
-                $needreplace = 1;
-                $contentplugin = 'tb_my_courses';
             } else if ($regs[1][$i] == 'LEELOOLXP_BENEFITS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_m_slots';
@@ -98,9 +86,6 @@ class filter_leeloolxp extends moodle_text_filter {
             } else if ($regs[1][$i] == 'LEELOOLXP_TOPCATS') {
                 $needreplace = 1;
                 $contentplugin = 'tb_top_cats';
-            } else if ($regs[1][$i] == 'LEELOOLXP_UPCOMING_COURSES') {
-                $needreplace = 1;
-                $contentplugin = 'tb_up_courses';
             }
 
             if ($needreplace == 1) {
