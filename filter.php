@@ -22,8 +22,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Class filter_leeloolxp
  */
@@ -96,7 +94,12 @@ class filter_leeloolxp extends moodle_text_filter {
                 }
                 require_once($CFG->dirroot . '/blocks/' . $contentplugin . '/block_' . $contentplugin . '.php');
 
-                $blockinstance = $DB->get_record('block_instances', array('blockname' => $contentplugin), '*', $strictness = IGNORE_MULTIPLE);
+                $blockinstance = $DB->get_record(
+                    'block_instances',
+                    array('blockname' => $contentplugin),
+                    '*',
+                    $strictness = IGNORE_MULTIPLE
+                );
                 if (!$blockinstance) {
                     $newval = $contentplugin . get_string('block_instancenotfound', 'filter_leeloolxp');
                     $text = str_replace($regs[0][$i], $newval, $text);
@@ -110,10 +113,11 @@ class filter_leeloolxp extends moodle_text_filter {
                 $contextblock = context_block::instance($blockinstance->id);
                 $parentcontext = $contextblock->get_parent_context();
                 $blockonfrontpage = ($SITE->id == $parentcontext->instanceid); // Skip enrolment and course capability check.
-                if (!has_capability('moodle/block:view', $contextblock)
-                    OR !$blockonfrontpage AND ($parentcontext->contextlevel == CONTEXT_COURSE AND !is_enrolled($parentcontext))
-                    AND ($parentcontext->contextlevel == CONTEXT_COURSE
-                    AND !has_capability('moodle/course:view', $parentcontext)
+                if (
+                    !has_capability('moodle/block:view', $contextblock)
+                    or !$blockonfrontpage and ($parentcontext->contextlevel == CONTEXT_COURSE and !is_enrolled($parentcontext))
+                    and ($parentcontext->contextlevel == CONTEXT_COURSE
+                        and !has_capability('moodle/course:view', $parentcontext)
                     )
                 ) {
                     // This user is not allowed to see this block.

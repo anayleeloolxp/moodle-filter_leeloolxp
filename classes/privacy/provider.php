@@ -24,8 +24,6 @@
 
 namespace filter_leeloolxp\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for filter_leeloolxp implementing null_provider.
  *
